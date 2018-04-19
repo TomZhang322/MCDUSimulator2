@@ -1,0 +1,17 @@
+#Downlink settings
+ibmmqFactory:
+  #IBMMQ settings
+  amqsFactoryList:
+    - host: 192.168.211.36
+      port: 1414
+      channel: CHL.AMQS1
+      queueManager: AMQS1
+      recvQueue: Q.GWTOAMQS
+      sendQueue: Q.AMQSTOGW
+  #MQConnectionPool settings
+  activeMode: 0
+  timeout: 3000
+  maxConnections: 10
+  maxIdelConnections: 5
+#MAS Configuration
+masRuquestFlag: S
